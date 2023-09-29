@@ -1,0 +1,80 @@
+:root {
+  --base-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --text-color: #FFF;
+  --main-color: #e7191d;
+  --background-color: #9b1d1f;
+
+  --font-size: 14px;
+
+  --padding-0: .25em;
+  --padding-1 : .5em;
+  --padding-2 : .75em;
+  --padding-3 : 1em;
+}
+
+body {
+    font-family: var(--base-font);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header {
+    height: 80px;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: var(--padding-3);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, .5) ;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  appearance: none;
+  padding-block: 0px;
+  padding-inline: 0px;
+  writing-mode: inherit;
+  align-items: baseline;
+  box-sizing: inherit;
+
+}
+
+main {
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+}
+
+.game-box {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 30px;
+    box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, .5) ;
+}
+
+.game-progress-holder {
+    height: 50px;
+    background-color: var(--main-color);
+}
+
+.game-holder {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px
+    
+}
+
